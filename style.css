@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7d1c0; /* light pink */
+}
+
+header {
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo left, Nav right */
+    padding: 10px 20px;
+}
+
+.logo {
+    /* Text styles hata diye, kyunki ab image hai */
+    width: 220px;      /* Apne logo image ka size yahan adjust karo */
+    height: auto;
+    flex-shrink: 0;    /* Logo chhota na ho */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Baaki tumhara original CSS unchanged hi rahega */
+
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Courses Section */
+.courses ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ---------- Teacher Section Styling ---------- */
+
+.teachers {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.teacher-card {
+    display: flex;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s ease;
+}
+
+.teacher-card:hover {
+    transform: scale(1.02);
+}
+
+.teacher-photo {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-info {
+    flex: 1;
+}
+
+.teacher-name {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.teacher-info p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* ---------- Skills Badges ---------- */
+.skills {
+    margin-top: 10px;
+}
+
+.skill {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    margin: 4px 4px 0 0;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #2c80b4;
+}
+
+
+.welcome-heading {
+    text-align: center;
+    color: #e05708; /* Bootstrap blue */
+    font-size: 36px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.welcome-heading:hover {
+    color: #0ae477; /* Darker blue on hover */
+}
+
+.tagline {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin: 20px auto 40px auto;
+    max-width: 700px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
